@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhumi Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     HEADER / NAVBAR
+     Sticky nav bar with smooth underline hover effect
+     ============================================================ -->
+<header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#explore">Skills</a></li>
+                <li><a href="#explore">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<!-- ============================================================
+     HERO SECTION
+     Full-height intro with name, subtitle, CTA buttons, and image
+     ============================================================ -->
+<section id="hero">
+
+    <div class="hero-text">
+        <p class="subtitle">Frontend Developer</p>
+
+        <h1>Hi, I'm <span>Bhumi</span></h1>
+
+        <p class="description">
+            Passionate about building beautiful,
+            responsive and user-friendly web experiences.
+        </p>
+
+        <div class="buttons">
+            <a href="#" id="view-work" class="btn">View Work</a>
+            <a href="./assets/resume-current.pdf" class="btn btn-outline" target="_blank"> Resume</a>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="./images/herosection.png" alt="Lego Developer">
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     ABOUT SECTION
+     Two-column layout: bio text on left, education card on right
+     ============================================================ -->
+<section id="about">
+    <div class="about-container">
+
+        <!-- Left: Bio -->
+        <div class="about-left">
+            <h2>About Me</h2>
+
+            <p>
+                I'm an Information Technology undergraduate currently
+                pursuing my B.Tech from BPIT, GGSIPU.
+            </p>
+
+            <p>
+                I enjoy turning ideas into interactive and responsive
+                web experiences while continuously improving my
+                problem-solving abilities through Data Structures
+                and Algorithms.
+            </p>
+
+            <p>
+                My goal is to build impactful software, write clean
+                and efficient code, and keep learning modern
+                technologies that help me grow as a developer.
+            </p>
+        </div>
+
+        <!-- Right: Education Card -->
+        <div class="about-right">
+            <div class="about-card">
+                <h3>Education</h3>
+                <p>B.Tech Information Technology</p>
+                <p>BPIT, GGSIPU</p>
+                <p>2023 - 2027</p>
+                <p>CGPA: 8.19</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ============================================================
+     EXPLORE SECTION
+     Tab-based section: Skills | Projects | Achievements
+     JS in script.js handles showing/hiding tab content
+     ============================================================ -->
+<section id="explore">
+
+    <div class="explore-header">
+        <h2>Explore My <span>Work</span></h2>
+        <p class="explore-sub">Click a category to explore</p>
+    </div>
+
+    <!-- Tab Buttons -->
+    <div class="tabs">
+        <div class="card" id="skills">Skills</div>
+        <div class="card" id="projects">Projects</div>
+        <div class="card" id="achievements">Achievements</div>
+    </div>
+
+    <!-- Tab Content Area -->
+    <div class="display-area">
+
+        <!-- ── SKILLS TAB ──────────────────────────────────── -->
+        <div "class="tab-content" id="skills-content">
+            <div class="section-label">Skills</div>
+
+            <div class="skill-card">
+                <h3>Programming Languages</h3>
+                <p>Java</p>
+                <p>JavaScript</p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>SQL</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Core CS</h3>
+                <p>Data Structures & Algorithms</p>
+                <p>OOPs</p>
+                <p>DBMS</p>
+                <p>Operating Systems</p>
+                <p>Computer Networks</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Frontend</h3>
+                <p>Responsive Design</p>
+                <p>DOM Manipulation</p>
+                <p>React Basics</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Tools</h3>
+                <p>Git</p>
+                <p>GitHub</p>
+                <p>VS Code</p>
+                <p>MySQL</p>
+            </div>
+        </div>
+        <!-- ── END SKILLS TAB ─────────────────────────────── -->
+
+
+        <!-- ── PROJECTS TAB ───────────────────────────────── -->
+        <div class="tab-content" id="projects-content">
+            <div class="section-label">Projects</div>
+
+            <!-- Project Card 1 — fill in your project details -->
+            <div class="project-card">
+              <h3>MindCare</h3>
+              <p class="project-desc">A mental health check-in platform that helps users track
+                mood, stress levels and emotional well-being through
+                daily assessments and personalized insights.</p>
+                <div class="project-features">
+                  <span>Mood Tracking</span>
+                  <span>Analytics Dashboard</span>
+                  <span>Wellness Tips</span>
+                </div>
+                <div class="project-tech">
+                  <span>React</span>
+                  <span>JavaScript</span>
+                  <span>HTML</span>
+                  <span>CSS</span>  </div>
+                  <div class="project-links">
+                    <a href="#" class="project-btn">Live Demo</a>
+                    <a href="#" class="project-btn project-btn-outline">GitHub</a>
+                  </div>
+            </div>
+            <!-- Project Card 2 — fill in your project details -->
+            <div class="project-card">
+              <h3>Personal Portfolio</h3>
+              <p class="project-desc">
+                A responsive developer portfolio website built to showcase
+                projects, technical skills and achievements through an
+                interactive user interface.
+              </p>
+              <div class="project-features">
+                <span>Responsive Design</span>
+                <span>Interactive UI</span>
+                <span>Project Showcase</span>
+              </div>
+              <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-btn">Live Demo</a>
+                <a href="#" class="project-btn project-btn-outline">GitHub</a>
+              </div>
+            </div>
+        </div>
+        <!-- ── END PROJECTS TAB ───────────────────────────── -->
+
+
+        <!-- ── ACHIEVEMENTS TAB ───────────────────────────── -->
+         <div class="tab-content" id="achievements-content">
+         <div class="section-label">Achievements</div>
+
+    <!-- Certificate 1 -->
+    <div class="cert-card">
+        <div class="cert-thumbnail">
+            <img src="./assets/dsalogo.png" alt="DSA Certificate">
+        </div>
+        <div class="cert-info">
+            <div class="cert-top">
+                <h3>DSA Training</h3>
+                <span class="cert-date">📅 October 2025</span>
+            </div>
+            <p class="cert-issuer">Coding Blocks</p>
+            <p class="cert-desc">
+                Pursuing intensive Data Structures and Algorithms training
+                at Coding Blocks with hands-on implementation of core
+                concepts and interview-focused problem solving.
+            </p>
+            <a href="./assets/IMG-20260422-WA0012.jpg" class="cert-btn">👁 View Certificate</a>
+        </div>
+    </div>
+
+    <!-- Certificate 2 -->
+    <div class="cert-card">
+        <div class="cert-thumbnail">
+            <img src="./assets/webdevlogo.png" alt="Web Dev Certificate">
+        </div>
+        <div class="cert-info">
+            <div class="cert-top">
+                <h3>Web Development Training</h3>
+                <span class="cert-date">📅 Ongoing</span>
+            </div>
+            <p class="cert-issuer">Coding Blocks</p>
+            <p class="cert-desc">
+                Pursuing MERN Stack Web Development training at Coding
+                Blocks, building responsive web applications using modern
+                frontend technologies and React.
+            </p>
+            <a href="./assets/GenAi Badge.jpg" class="cert-btn">👁 View Certificate</a>
+        </div>
+    </div>
+
+    <!-- Certificate 3 -->
+    <div class="cert-card">
+        <div class="cert-thumbnail">
+            <img src="./assets/googlelogo.png" alt="Google Gen AI Certificate">
+        </div>
+        <div class="cert-info">
+            <div class="cert-top">
+                <h3>Google Gen AI Workshop</h3>
+                <span class="cert-date">📅 June 2026</span>
+            </div>
+            <p class="cert-issuer">Google Cloud</p>
+            <p class="cert-desc">
+                Successfully completed Google's Generative AI Intensive
+                Workshop and earned the official completion badge.
+            </p>
+            <a href="#" class="cert-btn">👁 View Certificate</a>
+        </div>
+    </div>
+
+</div>
+<!-- ── END ACHIEVEMENTS TAB ───────────────────────────── -->
+    </div><!-- end .display-area -->
+
+</section>
+<!--END EXPLORE -->
+<!-- ============================================================
+<!-- CONTACT SECTION -->
+ <!-- ============================================================
+     CONTACT SECTION
+     Split layout: info left, form right
+     ============================================================ -->
+<section id="contact">
+
+    <h2>Let's <span>Connect</span></h2>
+
+    <p class="contact-text">
+        I'm currently looking for internship and software
+        development opportunities. Feel free to reach out.
+    </p>
+
+    <div class="contact-wrapper">
+
+        <!-- Left: Links -->
+        <div class="contact-links">
+            <a href="mailto:bhumijaswani28@gmail.com">📧 Email</a>
+            <a href="https://linkedin.com/in/jaswanibhumi">💼 LinkedIn</a>
+            <a href="https://github.com/bhumijaswani">💻 GitHub</a>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="contact-form-box">
+            <h3>Send a Message</h3>
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your name" />
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="your@email.com" />
+            </div>
+
+            <div class="form-group">
+                <label for="note">Note</label>
+                <textarea id="note" rows="4" placeholder="Write your message..."></textarea>
+            </div>
+
+            <button class="send-btn" onclick="handleSend()">Send Message</button>
+        </div>
+
+    </div>
+
+</section>
+<!-- ============================================================ END CONTACT -->
+
+
+<!-- JS — tab switching logic lives here -->
+<script src="./script.js"></script>
+
+</body>
+</html>
